@@ -1,0 +1,1 @@
+set(AM_OLD_COMPILE_SETTINGS ";ITK_IO_FACTORY_REGISTER_MANAGER;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB ~~~ /home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/ITKIOFactoryRegistration;/usr/local/include/ITK-4.4;/usr/include/QtGui;/usr/include/QtCore;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin;/usr/include ~~~  ~~~ FALSE ~~~ ")

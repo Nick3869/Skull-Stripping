@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="skull_stripping" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\;CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="skull_stripping">
+         <Option output="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/skull_stripping" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+            <Add directory="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/ITKIOFactoryRegistration" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/QtCore" />
+            <Add directory="/usr/include/QtGui" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/ITK-4.4" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 skull_stripping" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="skull_stripping/fast">
+         <Option output="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/skull_stripping" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add option="-DQT_CORE_LIB" />
+            <Add directory="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+            <Add directory="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/ITKIOFactoryRegistration" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/QtCore" />
+            <Add directory="/usr/include/QtGui" />
+            <Add directory="/usr/include/c++/4.7" />
+            <Add directory="/usr/include/c++/4.7/backward" />
+            <Add directory="/usr/include/c++/4.7/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.7/include-fixed" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/ITK-4.4" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 skull_stripping/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="skull_stripping_automoc">
+         <Option working_dir="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 skull_stripping_automoc" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/mainwindow.cpp">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/strip.cpp">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/mainwindow.h">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/mainwindow.ui">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/strip.h">
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/ITKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/ITKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/ITKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/ITKTargets-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/ITKModuleAPI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/UseITK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/itkImageIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/itkTransformIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDoubleConversion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKKWSys.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVNL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVNLInstantiation.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKCurvatureFlow.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageAdaptors.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKNetlib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKTransform.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageGrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOImageBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOBMP.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOBioRad.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKExpat.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKOpenJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKZLIB.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOGIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOLSM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKMetaIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOMeta.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKNIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIONIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKNrrdIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIONRRD.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOStimulate.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKTestKernel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageCompose.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKPath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageIntensity.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageLabel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKConnectedComponents.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKLabelMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKBinaryMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKNarrowBand.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDistanceMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKQuadEdgeMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKFastMarching.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageCompare.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageGradient.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageFeature.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKOptimizers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKSignedDistanceFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKLevelSets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKAntiAlias.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKPolynomials.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKBiasCorrection.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKBioCell.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKColormap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKFFT.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKConvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDICOMParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDeconvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDeformableMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDenoising.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDiffusionTensorImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDisplacementField.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKEigen.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKRegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKFEM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKFEMRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOGE.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIORAW.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOSiemens.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOTransformBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOTransformHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOTransformInsightLegacy.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOTransformMatlab.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKKLMRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKLabelVoting.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKMarkovRandomFieldsClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKNeuralNetworks.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKQuadEdgeMeshFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKSpatialFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKV3Compatibility.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVoronoi.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKWatersheds.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKDeprecated.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPURegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKGPUThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOCSV.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIOHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKImageFusion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKIntegratedTest.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKLevelSetsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKOptimizersv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKMetricsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKRegistrationMethodsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKReview.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVideoCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVideoIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+      <Unit filename="/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/src/../../../../../../../../usr/local/lib/cmake/ITK-4.4/Modules/ITKVideoFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\local\lib\cmake\ITK-4.4\Modules\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
