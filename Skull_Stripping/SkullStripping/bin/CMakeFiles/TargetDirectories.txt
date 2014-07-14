@@ -1,2 +1,0 @@
-/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/CMakeFiles/skull_stripping.dir
-/home/sci/nfanjat/Documents/Depot/Skull_Stripping/SkullStripping/bin/CMakeFiles/skull_stripping_automoc.dir

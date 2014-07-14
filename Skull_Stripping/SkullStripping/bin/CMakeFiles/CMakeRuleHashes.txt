@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-aba9937361de9c1078a0bfeebe32dee5 CMakeFiles/skull_stripping_automoc
-23bb3591ae151bb1fb4806eea0fdc15e ui_mainwindow.h

@@ -1,1 +1,0 @@
-/home/sci/nfanjat/Documents/Depot/Skull_Stripping/Skull_Stripping/bin/CMakeFiles/SkullStripping.dir
