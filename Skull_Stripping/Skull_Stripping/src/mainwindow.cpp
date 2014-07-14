@@ -17,33 +17,32 @@ MainWindow::~MainWindow()
 
 void MainWindow::browseIn()
 {
-    openFile(str);
-    ui->inputt->setText(str);
-    str = QString();
+    openFile(strin);
+    ui->inputt->setText(strin);
 }
 
 void MainWindow::browseOu()
 {
-    openFile(str);
-    ui->outputt->setText(str);
-    str = QString();
+    openFile(strou);
+    ui->outputt->setText(strou);
 }
 
 void MainWindow::browseLa()
 {
-    openFile(str);
-    ui->labelt->setText(str);
-    str = QString();
+    openFile(strla);
+    ui->labelt->setText(strla);
 }
 
 void MainWindow::start()
 {
-    //strip(ui->inputt->toPlainText(),ui->outputt->toPlainText(),ui->labelt->toPlainText());
+    strip(strin.toStdString().c_str(),strou.toStdString().c_str(),strla.toStdString().c_str());
 }
 
 void MainWindow::init()
 {
-    str = QString();
+    strin = QString();
+    strla = QString();
+    strou = QString("output.nrrd");
 }
 
 void MainWindow::openFile(QString& path)

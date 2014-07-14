@@ -111,6 +111,11 @@ public:
         label->setText(QApplication::translate("MainWindow", "Input File", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("MainWindow", "Output File", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MainWindow", "Label", 0, QApplication::UnicodeUTF8));
+        outputt->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">output.nrrd</p></body></html>", 0, QApplication::UnicodeUTF8));
         start->setText(QApplication::translate("MainWindow", "Start", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

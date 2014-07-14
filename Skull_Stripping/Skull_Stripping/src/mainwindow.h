@@ -28,7 +28,7 @@ public slots:
 private:
     Ui::MainWindow *ui;
 
-    QString str;
+    QString strin,strla,strou,str;
 
     void init();
 

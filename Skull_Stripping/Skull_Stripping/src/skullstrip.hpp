@@ -3,6 +3,6 @@
 
 #include <QString>
 
-void strip(QString& input, QString& output, QString& label);
+void strip(const char* input, const char* output, const char* label);
 
 #endif // SKULLSTRIP_HPP
