@@ -11,24 +11,45 @@
 #include <itkMetaDataObject.h>
 #include <itkNrrdImageIO.h>
 #include <itkMaskImageFilter.h>
+#include <itkBinaryBallStructuringElement.h>
+#include <itkGrayscaleDilateImageFilter.h>
+#include <itkMedianImageFilter.h>
 
+// type definitions for the nrrd files
+typedef itk::Image<int,3>	    DiffusionImageType;
+typedef DiffusionImageType::Pointer	    DiffusionImagePointer;
+typedef itk::ImageFileReader<DiffusionImageType> ImageReaderType;
+
+typedef itk::Image<short,3> AtlasLabelType;
+typedef itk::ImageFileReader<AtlasLabelType> LabelReaderType;
+
+typedef itk::ImageFileWriter<DiffusionImageType> WriterType;
+
+typedef itk::ImageRegionConstIterator<DiffusionImageType> ConstIterator;
+typedef itk::ImageRegionIterator<DiffusionImageType> Iterator;
+
+typedef itk::BinaryBallStructuringElement<AtlasLabelType::PixelType,3> StructuringElementType;
+
+typedef itk::MaskImageFilter<DiffusionImageType, AtlasLabelType, DiffusionImageType> MaskFilterType;
+typedef itk::GrayscaleDilateImageFilter<AtlasLabelType, AtlasLabelType, StructuringElementType> DilateFilterType;
+typedef itk::MedianImageFilter<AtlasLabelType, AtlasLabelType> MedianFilterType;
+
+/** Basic version
+ * @brief strip
+ * @param input
+ * @param output
+ * @param label
+ */
 void strip(const char *input, const char *output, const char *label)
 {
     std::cout<<"Iterators version"<<std::endl;
-    // type definition for the nrrd files
-    typedef itk::Image<unsigned int,3>	    DiffusionImageType;
-    typedef DiffusionImageType::Pointer	    DiffusionImagePointer;
-    typedef itk::ImageFileReader<DiffusionImageType> FileReaderType;
-    typedef itk::ImageFileWriter<DiffusionImageType> WriterType;
-    typedef itk::ImageRegionConstIterator<DiffusionImageType> ConstIterator;
-    typedef itk::ImageRegionIterator<DiffusionImageType> Iterator;
 
     // Reading files
-    FileReaderType::Pointer in = FileReaderType::New();
+    ImageReaderType::Pointer in = ImageReaderType::New();
     in->SetFileName(input);
     in->Update();
 
-    FileReaderType::Pointer la = FileReaderType::New();
+    ImageReaderType::Pointer la = ImageReaderType::New();
     la->SetFileName(label);
     la->Update();
 
@@ -72,20 +93,15 @@ void strip(const char *input, const char *output, const char *label)
     }
 }
 
+/** Version with filter
+ * @brief strip_filter
+ * @param input
+ * @param output
+ * @param label
+ */
 void strip_filter(const char *input, const char *output, const char *label)
 {
     std::cout<<"Filter version"<<std::endl;
-
-    // type definition for the different files
-    typedef itk::Image<int,3> DiffusionImageType;
-    typedef itk::ImageFileReader<DiffusionImageType> ImageReaderType;
-
-    typedef itk::Image<short,3> AtlasLabelType;
-    typedef itk::ImageFileReader<AtlasLabelType> LabelReaderType;
-
-    typedef itk::ImageFileWriter<DiffusionImageType> WriterType;
-
-    typedef itk::MaskImageFilter<DiffusionImageType, AtlasLabelType, DiffusionImageType> MaskFilterType;
 
     // Reading files
     ImageReaderType::Pointer in = ImageReaderType::New();
@@ -108,8 +124,8 @@ void strip_filter(const char *input, const char *output, const char *label)
 
     MaskFilterType::Pointer maskFilter = MaskFilterType::New();
 
-    maskFilter->SetInput1( in->GetOutput() );
-    maskFilter->SetInput2( la->GetOutput() );
+    maskFilter->SetInput( in->GetOutput() );
+    maskFilter->SetMaskImage( la->GetOutput() );
 
     try
     {
@@ -133,3 +149,149 @@ void strip_filter(const char *input, const char *output, const char *label)
     }
 }
 
+/** Filtering with dilated label
+ * @brief strip_dilate
+ * @param input
+ * @param output
+ * @param label
+ */
+void strip_dilate(const char* input, const char* output, const char* label)
+{
+    std::cout<<"Dilatation version"<<std::endl;
+
+    // Reading files
+    ImageReaderType::Pointer in = ImageReaderType::New();
+    in->SetFileName(input);
+
+    LabelReaderType::Pointer la = LabelReaderType::New();
+    la->SetFileName(label);
+
+    StructuringElementType structuringElement;
+    structuringElement.SetRadius(1);
+    structuringElement.CreateStructuringElement();
+
+    try
+    {
+        in->Update();
+        la->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    WriterType::Pointer writer = WriterType::New();
+
+    DilateFilterType::Pointer dilateFilter= DilateFilterType::New();
+
+    MaskFilterType::Pointer maskFilter = MaskFilterType::New();
+
+    dilateFilter->SetInput( la->GetOutput());
+    dilateFilter->SetKernel(structuringElement);
+
+    try
+    {
+        dilateFilter->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    maskFilter->SetInput( in->GetOutput() );
+    maskFilter->SetMaskImage( dilateFilter->GetOutput() );
+
+    try
+    {
+        maskFilter->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    // Writing the file
+    writer->SetInput( maskFilter->GetOutput() );
+    writer->SetFileName(output);
+    try
+    {
+        writer->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+}
+
+/** Filtering with smoothed label
+ * @brief strip_smooth
+ * @param input
+ * @param output
+ * @param label
+ */
+void strip_smooth(const char* input, const char* output, const char* label)
+{
+    std::cout<<"Smoothing version"<<std::endl;
+
+    // Reading files
+    ImageReaderType::Pointer in = ImageReaderType::New();
+    in->SetFileName(input);
+
+    LabelReaderType::Pointer la = LabelReaderType::New();
+    la->SetFileName(label);
+
+    try
+    {
+        in->Update();
+        la->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    WriterType::Pointer writer = WriterType::New();
+
+    MedianFilterType::Pointer medianFilter= MedianFilterType::New();
+    MedianFilterType::InputSizeType radius;
+
+    MaskFilterType::Pointer maskFilter = MaskFilterType::New();
+
+    radius.Fill(2);
+    medianFilter->SetInput( la->GetOutput());
+    medianFilter->SetRadius(radius);
+
+    try
+    {
+        medianFilter->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    maskFilter->SetInput( in->GetOutput() );
+    maskFilter->SetMaskImage( medianFilter->GetOutput() );
+
+    try
+    {
+        maskFilter->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+    // Writing the file
+    writer->SetInput( maskFilter->GetOutput() );
+    writer->SetFileName(output);
+    try
+    {
+        writer->Update();
+    }
+    catch (itk::ExceptionObject e)
+    {
+        std::cout << e << std::endl;
+    }
+
+}

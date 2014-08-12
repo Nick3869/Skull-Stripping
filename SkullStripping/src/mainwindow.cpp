@@ -42,8 +42,24 @@ void MainWindow::start()
     {
         if (ui->filter->isChecked())
         {
-            strip_filter(strin.toStdString().c_str(),strou.toStdString().c_str(),strla.toStdString().c_str());
-            QMessageBox::information(this, "Complete", "File "+strou+" generated");
+            if (ui->dilate->isChecked())
+            {
+                strip_dilate(strin.toStdString().c_str(),strou.toStdString().c_str(),strla.toStdString().c_str());
+                QMessageBox::information(this, "Complete", "File "+strou+" generated");
+            }
+            else
+            {
+                if (ui->smoothing->isChecked())
+                {
+                    strip_smooth(strin.toStdString().c_str(),strou.toStdString().c_str(),strla.toStdString().c_str());
+                    QMessageBox::information(this, "Complete", "File "+strou+" generated");
+                }
+                else
+                {
+                    strip_filter(strin.toStdString().c_str(),strou.toStdString().c_str(),strla.toStdString().c_str());
+                    QMessageBox::information(this, "Complete", "File "+strou+" generated");
+                }
+            }
         }
         else
         {
